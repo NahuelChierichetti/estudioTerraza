@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Terraza</title>
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <h1><a href="" class="navbar-brand">Terraza</a></h1>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#Acercade" class="nav-link">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#Servicios" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#Portfolio" class="nav-link">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#Testimonios" class="nav-link">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#Contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid bg-section">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h2 class="text-center mb-5 section-title">¡Recibimos tu testimonio!</h2>
+                    <p>Gracias <%= entity.nombre %> por dejarnos tu testimonio </p>
+                    <a href="/" class="btn btn-env-testimonio  mt-4 p-2 ">Volver a Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-3">
+        <div class="container d-flex justify-content-between">
+            <p class="lead">&copy; Copyright <span class="tut">TERRAZA</span></p>
+            <p class="lead">Desarrollado por <span class="tut">Chierichetti Nahuel Nicolás</span></p>
+        </div>
+    </footer>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
