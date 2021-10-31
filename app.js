@@ -1,10 +1,9 @@
 import express from 'express'
 import path from 'path'
 import fs from 'fs'
-import routerApi from './routers/testimoniosRouterAPI.js'
-import routerWeb from './routers/routerWeb.js'
+import testimonioRouter from './routers/testimonio.router.js'
 
-//Se le asigna lo que devuelve la funcion express que exporta express, app va a ser el servidor de la app
+
 const app = express()
 
 app.set('views', './views')
@@ -14,9 +13,7 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-app.use(routerApi)
-app.use(routerWeb)
-
+app.use(testimonioRouter)
 
 app.listen(80, function () {
     console.log("El servidor esta ON")
